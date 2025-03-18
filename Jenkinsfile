@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'make -C main'
+                sh 'make -C not_main'
             }
         }
         stage('Test') {
